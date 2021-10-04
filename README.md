@@ -17,6 +17,19 @@
 
 A simple js module boilerplate with all modern technologies
 
+| Table of contents                                                                                                                                                                                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Features](#features)                                                                                                                                                                                                                                                   |
+| [Usage](#usage)                                                                                                                                                                                                                                                         |
+| [📜 Documentation](#-documentation) <br/> <br/> _[Build for development](#build-for-development) <br/> [Build for production](#build-for-production) <br/> [Cleaning](#cleaning) <br/> [Linting](#linting) <br/> [Prettifying](#prettifying) <br/> [Testing](#testing)_ |
+| [Stack](#stack)                                                                                                                                                                                                                                                         |
+| [👨‍💻 Developer](#-developer)                                                                                                                                                                                                                                             |
+| [For all Developers](#for-all-developers)                                                                                                                                                                                                                               |
+| [🤝 Contributing](#-contributing)                                                                                                                                                                                                                                       |
+| [🤝 Contributors](#-contributors)                                                                                                                                                                                                                                       |
+| [Show your support](#show-your-support)                                                                                                                                                                                                                                 |
+| [📝 License](#-license)                                                                                                                                                                                                                                                 |
+
 </div>
 
 ## Features
@@ -33,7 +46,7 @@ A simple js module boilerplate with all modern technologies
 
 ## Usage
 
-- You need to have a machine installed with [git](https://git-scm.com/) and [node](https://nodejs.org/) (which has [npm](https://www.npmjs.com/) included within it) use this boilerplate
+- You need to have a machine installed with _[git](https://git-scm.com/)_ and _[node](https://nodejs.org/)_ (which has _[npm](https://www.npmjs.com/)_ included within it) use this boilerplate
 
 ```sh
 git clone https://github.com/Rajaniraiyn/modern-js-boilerplate.git
@@ -47,7 +60,7 @@ npm install
 
 ### Build for development
 
-- Creates large tree-shaken code for development in dist folder using webpack with babel
+- Creates large tree-shaken code for development in _dist_ folder using [webpack](https://webpack.js.org/) with [babel](https://babeljs.io/)
 
 ```sh
 npm run build:dev
@@ -55,7 +68,7 @@ npm run build:dev
 
 ### Build for production
 
-- Creates a minified and optimized code for production in dist folder using webpack with babel and terser
+- Creates a minified and optimized code for production in _dist_ folder using [webpack](https://webpack.js.org/) with [babel](https://babeljs.io/) and [terser](https://terser.org/)
 
 ```sh
 npm run build
@@ -63,7 +76,7 @@ npm run build
 
 ### Cleaning
 
-- Removes all files in dist folder using rimraf
+- Removes all files in _dist_ folder using rimraf
 
 ```sh
 npm run clean
@@ -71,7 +84,7 @@ npm run clean
 
 ### Linting
 
-- Lints all files in src directory using ESLint with Airbnb style
+- Lints all files in _src_ directory using [ESLint](https://eslint.org/) with Airbnb style
 
 ```sh
 npm run lint
@@ -79,7 +92,7 @@ npm run lint
 
 ### Prettifying
 
-- Lints the code then prettify the code using prettier
+- Lints the code then prettify the code using [prettier](https://prettier.io/)
 
 ```sh
 npm run prettier
@@ -87,7 +100,7 @@ npm run prettier
 
 ### Testing
 
-- Tests according `my.test.js` using jest
+- Tests according `my.test.js` using [jest](https://jestjs.io/)
 
 ```sh
 npm run test
@@ -109,7 +122,7 @@ npm run test
 
 ## For all Developers
 
-> ## If you optimize everything, you will always be unhappy. - _[Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)_
+> If you optimize everything, you will always be unhappy. - _[Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)_
 
 ## 🤝 Contributing
 

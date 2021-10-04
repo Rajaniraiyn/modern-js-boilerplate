@@ -1,5 +1,5 @@
 {
-  "name": "js-boilerplate",
+  "name": "modern-js-boilerplate",
   "version": "1.0.0",
   "description": "A simple js module boilerplate",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
     "build:dev": "webpack --mode development",
     "build": "webpack --mode production",
     "test": "jest --coverage",
-    "lint": "eslint --fix src/",
+    "lint": "eslint --fix src",
     "prettier": "npm run lint && prettier --write .",
     "prepare": "husky install",
     "prebuild": "npm run test && npm run clean && npm run prettier && git add .",
