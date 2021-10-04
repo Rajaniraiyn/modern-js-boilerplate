@@ -2,7 +2,7 @@
 .cache/
 coverage/
 dist/*.html
-manual_test/
+_test/
 node_modules/
 *.log
 
