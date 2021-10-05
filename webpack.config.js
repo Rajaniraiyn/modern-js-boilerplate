@@ -1,6 +1,5 @@
 const webpack = require("webpack");
 const path = require("path");
-// const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const TerserPlugin = require("terser-webpack-plugin");
 
@@ -38,7 +37,6 @@ const config = (env, argv) => ({
     ],
   },
   plugins: [
-    // new CleanWebpackPlugin(),
     new BundleAnalyzerPlugin({
       analyzerMode: "static",
       openAnalyzer: false,
@@ -60,7 +58,7 @@ const config = (env, argv) => ({
     port: 8080,
     compress: true,
     hot: true,
-    //open: true,
+    open: true,
   },
 });
 
