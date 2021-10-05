@@ -23,6 +23,7 @@ const terserOptions = {
 
 const config = (env, argv) => ({
   entry: "./src/main.js",
+  mode: argv.mode,
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
@@ -42,6 +43,7 @@ const config = (env, argv) => ({
       analyzerMode: "static",
       openAnalyzer: false,
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   optimization: {
     usedExports: true,
@@ -51,6 +53,16 @@ const config = (env, argv) => ({
         terserOptions,
       }),
     ],
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "_test"),
+    },
+    port: 8080,
+    compress: true,
+    hot: true,
+    liveReload: false,
+    //open: true,
   },
 });
 
