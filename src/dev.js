@@ -3,3 +3,5 @@
  */
 
 export const { log } = console;
+
+export const { clear } = console;

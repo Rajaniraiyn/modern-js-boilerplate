@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+// const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const TerserPlugin = require("terser-webpack-plugin");
 
@@ -23,10 +23,10 @@ const terserOptions = {
 
 const config = (env, argv) => ({
   entry: "./src/main.js",
-  mode: argv.mode,
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
+    clean: true,
   },
   module: {
     rules: [
@@ -38,12 +38,11 @@ const config = (env, argv) => ({
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     new BundleAnalyzerPlugin({
       analyzerMode: "static",
       openAnalyzer: false,
     }),
-    new webpack.HotModuleReplacementPlugin(),
   ],
   optimization: {
     usedExports: true,
@@ -61,7 +60,6 @@ const config = (env, argv) => ({
     port: 8080,
     compress: true,
     hot: true,
-    liveReload: false,
     //open: true,
   },
 });

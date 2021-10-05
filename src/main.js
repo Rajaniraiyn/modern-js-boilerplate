@@ -6,6 +6,14 @@
  * This comment wont be removed in bundled code
  */
 
-import { log } from "./dev";
+import { log, clear } from "./dev";
+
+/**
+ * For HMR (Hot Module Replacement) only
+ */
+if (module.hot) {
+  module.hot.accept();
+  clear();
+}
 
 log("Hello World");
