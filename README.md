@@ -1,18 +1,22 @@
 <div align="center">
 
-# Welcome to JS Module Boilerplate 👋
+# Welcome to Modern JS Boilerplate <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0--beta-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/Rajaniraiyn/modern-js-boilerplate#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="https://github.com/Rajaniraiyn/modern-js-boilerplate/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://github.com/Rajaniraiyn/modern-js-boilerplate/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/Rajaniraiyn/modern-js-boilerplate" />
-  </a>
+
+![Version](https://img.shields.io/npm/v/modern-js-boilerplate)
+![Size](https://img.shields.io/github/repo-size/Rajaniraiyn/modern-js-boilerplate)
+<a href="https://github.com/Rajaniraiyn/modern-js-boilerplate#readme" target="_blank">
+![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)
+</a>
+<a href="https://github.com/Rajaniraiyn/modern-js-boilerplate/graphs/commit-activity" target="_blank">
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+</a>
+<a href="https://github.com/Rajaniraiyn/modern-js-boilerplate/blob/master/LICENSE" target="_blank">
+![License: MIT](https://img.shields.io/github/license/Rajaniraiyn/modern-js-boilerplate)
+</a>
+![Dependabot](https://badgen.net/github/dependabot/Rajaniraiyn/modern-js-boilerplate)
+
 </p>
 
 A simple js module boilerplate with all modern technologies
@@ -60,10 +64,10 @@ npm install
 
 ### Build for development
 
-- Creates large tree-shaken code for development in _dist_ folder using [webpack](https://webpack.js.org/) with [babel](https://babeljs.io/)
+- Starts a local server at https://localhost:8080 with [HMR(Hot-Module-Replacement)](https://webpack.js.org/guides/hot-module-replacement/) using [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) with [babel](https://babeljs.io/)
 
 ```sh
-npm run build:dev
+npm run dev
 ```
 
 ### Build for production
